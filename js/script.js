@@ -9,7 +9,7 @@ function headerDate()
     const moons = ["januari", "febuari", "maret", "april", "mei", "juni", "juli", "agustus", "september", "oktober", "desember"]
 
     const time = date.getHours() + ':' + date.getMinutes()
-    const moon = `${days[date.getDay() - 1]}, ${date.getMonth()} ${moons[localeDate[1] - 1]}`
+    const moon = `Minggu, ${localeDate[1]} ${moons[localeDate[0] - 1]}`
 
     timeElement.textContent = time
     moonElement.textContent = moon
